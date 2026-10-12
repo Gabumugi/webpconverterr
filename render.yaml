@@ -1,7 +1,5 @@
 services:
   - type: web
-    name: my-app
-    runtime: node
-    rootDir: frontend  # <-- Change this to your app's folder
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    name: webp-converter
+    env: static
+    staticPublishPath: ./
